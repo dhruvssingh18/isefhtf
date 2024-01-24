@@ -1,0 +1,13 @@
+from sklearn.datasets import make_classification
+from sklearn.model_selection import train_test_split
+
+
+#Classifying Data Set & Dimensions
+X, Y = make_classification(n_samples=1000, n_classes=2, n_features=5, n_redundant=0, random_state=1)
+
+
+#Data Splitting(80/20 Ratio)
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2)
+
+print(X.shape)
+print(Y.shape)x
